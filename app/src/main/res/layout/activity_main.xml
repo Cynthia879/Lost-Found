@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="WELCOME!"
+        android:textSize="25dp"
+        android:layout_margin="50dp"
+        android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/black"
+            android:text="The app provides a platform for students to find lost property. Please pay attention to the following matters when using."
+            android:textSize="23sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matters needing attention"
+            android:textColor="@color/gray"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"></TextView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/gray"
+            android:text="1. Don't reveal your private information to others. \n2. Make sure the information you fill in is true. \n3. Abide by the regulations when using the app, and it is strictly prohibited to publish bad content."></TextView>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/check_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:textSize="23sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"></CheckBox>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_margin="30dp"
+                android:background="@color/gray"
+                android:visibility="invisible"
+                android:onClick="EnterAPP"></Button>
+        </LinearLayout>
+        </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
