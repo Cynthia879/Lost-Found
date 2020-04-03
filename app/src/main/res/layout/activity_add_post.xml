@@ -109,6 +109,7 @@
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:gravity="left"
         android:textSize="22sp"
         android:background="@drawable/edit_background"
         android:hint="Enter a detailed description here">
@@ -120,12 +121,14 @@
         android:orientation="horizontal"
         android:layout_marginTop="20dp">
         <RadioButton
+            android:id="@+id/rb_lost"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:text="post lost"
             android:layout_marginLeft="20dp"></RadioButton>
         <RadioButton
+            android:id="@+id/rb_found"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -138,7 +141,8 @@
         android:layout_margin="20dp"
         android:background="@color/gray"
         android:text="Publish"
-        android:textColor="@color/white"></Button>
+        android:textColor="@color/white"
+        android:onClick="PUBLISH"></Button>
 </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

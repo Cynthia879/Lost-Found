@@ -20,7 +20,8 @@
             android:text="Lost"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:textSize="20sp"></Button>
+            android:textSize="20sp"
+            android:onClick="ShowLOST"></Button>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -28,7 +29,8 @@
             android:text="Found"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:textSize="20sp"></Button>
+            android:textSize="20sp"
+            android:onClick="ShowFOUND"></Button>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -36,7 +38,8 @@
             android:text="ME"
             android:textColor="@color/white"
             android:layout_weight="1"
-            android:textSize="20sp"></Button>
+            android:textSize="20sp"
+            android:onClick="ME"></Button>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,7 +58,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="SEARCH"></Button>
+            android:text="SEARCH"
+            android:onClick="search"></Button>
     </LinearLayout>
 
     <ListView

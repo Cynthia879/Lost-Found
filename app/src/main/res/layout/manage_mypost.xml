@@ -71,6 +71,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:text="Type:"
+            android:textSize="25sp"></TextView>
+
+        <EditText
+            android:id="@+id/mp_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:textSize="25sp"></EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="Time:"
             android:textSize="25sp"></TextView>
 
@@ -104,31 +124,33 @@
     </LinearLayout>
     <EditText
         android:id="@+id/mp_describe"
-        android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:textSize="22sp"
+        android:gravity="left"
         android:background="@drawable/edit_background"
         android:hint="Enter a detailed description here">
     </EditText>
     <ListView
-        android:id="@+id/mp_comment"
+        android:id="@+id/mp_reply"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></ListView>
+        android:layout_height="100dp"></ListView>
        <LinearLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:orientation="horizontal">
     <Button
+        android:id="@+id/btn_modify"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_margin="20dp"
         android:background="@color/gray"
         android:text="MODIFY"
-        android:textColor="@color/white"></Button>
+        android:textColor="@color/white"
+        android:onClick="MODIFY"></Button>
            <Button
                android:layout_width="0dp"
                android:layout_height="wrap_content"
@@ -136,7 +158,8 @@
                android:layout_margin="20dp"
                android:background="@color/gray"
                android:text="DELETE"
-               android:textColor="@color/white"></Button>
+               android:textColor="@color/white"
+               android:onClick="DELETE"></Button>
        </LinearLayout>
 </LinearLayout>
     </ScrollView>

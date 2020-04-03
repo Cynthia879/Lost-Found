@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:singleLine="true"
-                    android:textSize="25sp"></EditText>
+                    android:textSize="20sp"></EditText>
             </LinearLayout>
 
             <LinearLayout
@@ -71,7 +71,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:singleLine="true"
-                    android:textSize="25sp"></EditText>
+                    android:textSize="20sp"></EditText>
             </LinearLayout>
 
             <LinearLayout
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:singleLine="true"
-                    android:textSize="25sp"></EditText>
+                    android:textSize="20sp"></EditText>
             </LinearLayout>
 
             <LinearLayout
@@ -105,9 +105,10 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:background="@color/softgray"
-                    android:text="Change"
+                    android:text="EDIT"
                     android:textColor="@color/white"
-                    android:textSize="25sp"></Button>
+                    android:textSize="25sp"
+                    android:onClick="EDIT"></Button>
 
                 <Button
                     android:layout_width="0dp"
@@ -117,7 +118,8 @@
                     android:background="@color/softgray"
                     android:text="Save"
                     android:textColor="@color/white"
-                    android:textSize="25sp"></Button>
+                    android:textSize="25sp"
+                    android:onClick="SAVE"></Button>
             </LinearLayout>
 
             <LinearLayout
@@ -142,14 +144,15 @@
                     android:background="@color/softgray"
                     android:text="add"
                     android:textColor="@color/white"
-                    android:textSize="20sp"></Button>
+                    android:textSize="20sp"
+                    android:onClick="ADD"></Button>
 
             </LinearLayout>
 
             <ListView
                 android:id="@+id/mypostlist"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"></ListView>
+                android:layout_height="350dp"></ListView>
 
 
         </LinearLayout>

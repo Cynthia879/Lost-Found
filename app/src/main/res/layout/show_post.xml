@@ -71,6 +71,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:text="Type:"
+            android:textSize="25sp"></TextView>
+
+        <TextView
+            android:id="@+id/dp_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:textSize="25sp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="Time:"
             android:textSize="25sp"></TextView>
 
@@ -112,10 +132,34 @@
         android:textSize="22sp"
         android:background="@drawable/edit_background">
     </TextView>
+
     <ListView
-        android:id="@+id/dp_comment"
+        android:id="@+id/dp_reply"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="120dp"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <EditText
+            android:id="@+id/edit_reply"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/edit_background"></EditText>
+        <Button
+            android:layout_weight="2"
+            android:layout_marginRight="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="reply"
+            android:textColor="@color/white"
+            android:background="@color/gray"
+            android:onClick="reply"></Button>
+    </LinearLayout>
 
 </LinearLayout>
     </ScrollView>
