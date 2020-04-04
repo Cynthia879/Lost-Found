@@ -1,0 +1,5 @@
+[Sat Apr 04 10:16:23.361305 2020] [mpm_winnt:notice] [pid 29632:tid 928] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Sat Apr 04 10:16:23.362301 2020] [mpm_winnt:notice] [pid 29632:tid 928] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Sat Apr 04 10:16:23.362301 2020] [core:notice] [pid 29632:tid 928] AH00094: Command line: 'D:\\mini-project\\LostFound_server/apache2/bin/httpd_usbwv8.exe -d D:/mini-project/LostFound_server/apache2'
+[Sat Apr 04 10:16:23.409175 2020] [mpm_winnt:notice] [pid 29632:tid 928] AH00418: Parent: Created child process 27012
+[Sat Apr 04 10:16:27.918931 2020] [mpm_winnt:notice] [pid 27012:tid 772] AH00354: Child: Starting 64 worker threads.
